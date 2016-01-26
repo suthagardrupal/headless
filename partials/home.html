@@ -1,0 +1,31 @@
+<div class="section">
+<div style="height: 400px" class="col-lg-12">
+                <uib-carousel interval="myInterval" no-wrap="noWrapSlides">
+                  <uib-slide ng-repeat="slide in slides" active="slide.active" index="slide.id">
+                      <img ng-bind-html="slide.image"></img>
+                    <div class="carousel-caption">                     
+                      <p>{{slide.title}}</p>
+                    </div>
+                  </uib-slide>
+                </uib-carousel>
+              </div>
+
+    <div class="container">
+        
+             
+        
+
+
+        <div class="row">
+		<div class="col-lg-12">		 
+                <h2 ng-bind-html="myHTMLTitle"></h2>
+                <hr>            
+		       <p ng-bind-html="myHTML"></p>
+		 </div>
+    </div>
+
+    </div>
+    <!-- /.container -->
+
+</div>
+<!-- /.section -->

@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">FAQ
+                <small>Frequently Asked Questions</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="../index.html">Home</a>
+                </li>
+                <li class="active">FAQ</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+         <uib-accordion close-others="oneAtATime">
+            <uib-accordion-group ng-repeat="row in faqs">
+              <uib-accordion-heading>
+                {{$index + 1}})  {{row.title}} <!-- <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i> -->
+              </uib-accordion-heading>
+               <p ng-bind-html="row.body"></p>
+            </uib-accordion-group>           
+          </uib-accordion>
+        </div>
+    </div>
+</div>
+<!-- /.container -->
